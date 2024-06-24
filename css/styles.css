@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+.chat-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+}
+.header {
+    width: 100%;
+    text-align: center;
+    color: #25d366; /* لون النص */
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+.input-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.chat-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    height: 25px; /* ارتفاع صندوق الكتابة */
+    overflow-y: auto;
+    max-height: 100px; /* أقصى ارتفاع للصندوق */
+    direction: rtl;
+}
+.input-container img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+.send-button {
+    background: #25d366;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: absolute;
+    right: -60px; /* لضبط موقع الزر */
+    top: 50%;
+    transform: translateY(-50%);
+}
+.send-button img {
+    width: 20px;
+    height: 20px;
+}
+.left-icon {
+    position: absolute;
+    left: 10px;
+}
